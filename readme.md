@@ -3,15 +3,12 @@
 Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you how to build mobile and web apps fast. — Read more at
 <http://rapidprototypingwithjs.com>.
 
-### Part I
+## Part II — Building Front-End Application
 
 * bootstrap
  	
  	[Twitter Bootstrap] scaffolding example
 
-* hello
-	
-	[NodeJS] "Hello World" app, ready for deployment
 
 * jquery
 	
@@ -29,8 +26,12 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 	
 	[BackboneJS] and [Parse.com] SDK Message Board
 
-### Part II
+## Part III — Building Back-End Application
 
+* hello
+	
+	[NodeJS] "Hello World" app, ready for deployment
+	
 * db
 	
 	Simple app to test local database connection with MongoDB Native Driver
@@ -42,6 +43,8 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 * mongo
 	
 	Message Board back-end: [MongoDB] storage, ready for deployment
+
+## Part IV — Putting it All Together
 
 * node
 	
