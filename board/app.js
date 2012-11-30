@@ -4,7 +4,7 @@ http://rapidprototypingwithjs.com.
 */
 
 // var URL = "http://localhost:5000/";
-var URL ="http://whispering-ravine-1316.herokuapp.com/";
+var URL ="http://your-app-name.herokuapp.com/";
 
 require(['libs/text!header.html', 'libs/text!home.html', 'libs/text!footer.html'], function (headerTpl, homeTpl, footerTpl) {
 

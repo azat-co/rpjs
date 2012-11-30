@@ -1,5 +1,5 @@
-var parseID="Zc36GIp6WyzKIB9HvqRBEGnIeMO0X21rDbVwGPvp";
-var parseKey="1LKZVd4KG6PFpldvCha5RDY8Z5EZeJhy2Bl4vgJ3";
+var parseID="your-parse-app-id";
+var parseKey="your-rest-api-key";
 
 $(document).ready(function(){
 	getMessages();

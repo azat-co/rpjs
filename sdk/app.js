@@ -4,7 +4,7 @@ http://rapidprototypingwithjs.com.
 */
 
 require(['libs/text!header.html', 'libs/text!home.html', 'libs/text!footer.html'], function (headerTpl, homeTpl, footerTpl) {
-	Parse.initialize("Zc36GIp6WyzKIB9HvqRBEGnIeMO0X21rDbVwGPvp", "r5zTZ9eydAcnRhAUI6k3XazS1JSnOPLbiaT1cWY6");
+	Parse.initialize("your-parse-app-id", "your-parse-js-sdk-key");
 	var ApplicationRouter = Backbone.Router.extend({
 		routes: {
 			"": "home",
