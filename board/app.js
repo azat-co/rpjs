@@ -1,3 +1,8 @@
+/*
+Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you how to build mobile and web apps fast. — Read more at
+http://rapidprototypingwithjs.com.
+*/
+
 // var URL = "http://localhost:5000/";
 var URL ="http://whispering-ravine-1316.herokuapp.com/";
 

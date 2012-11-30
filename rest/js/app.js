@@ -1,3 +1,8 @@
+/*
+Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you how to build mobile and web apps fast. — Read more at
+http://rapidprototypingwithjs.com.
+*/
+
 var sendURL="http://localhost:5000/messages/create.json";
 var getURL="http://localhost:5000/messages/list.json";
 
