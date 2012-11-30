@@ -1,10 +1,5 @@
-/*
-Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you how to build mobile and web apps fast. — Read more at
-http://rapidprototypingwithjs.com.
-*/
-
-var sendURL="http://localhost:5000/messages/create.json";
-var getURL="http://localhost:5000/messages/list.json";
+var parseID="your-parse-app-id";
+var parseKey="your-rest-api-key";
 
 $(document).ready(function(){
 	getMessages();
@@ -14,11 +9,13 @@ $(document).ready(function(){
 		console.log(username)
 		console.log("!")
 		$.ajax({
-			url: sendURL,
+			url: " https://api.parse.com/1/classes/MessageBoard",
 			headers: {
+				"X-Parse-Application-Id": parseID,
+				"X-Parse-REST-API-Key": parseKey
 			},
 			contentType: "application/json",
-			dataType: "jsonp",
+			dataType: "json",
 			processData: false,
 			data: JSON.stringify({
 				"username": username,
@@ -38,12 +35,13 @@ $(document).ready(function(){
 })
 function getMessages() {
 	$.ajax({
-		url: getURL,
-		// headers: {
-		// 
-		// },
+		url: " https://api.parse.com/1/classes/MessageBoard",
+		headers: {
+			"X-Parse-Application-Id": parseID,
+			"X-Parse-REST-API-Key": parseKey
+		},
 		contentType: "application/json",
-		dataType: "jsonp",
+		dataType: "json",
 		type: 'GET',
 		success: function(data) {
 			console.log("get");
