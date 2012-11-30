@@ -5,52 +5,52 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 
 ## Part II — Building Front-End Application
 
-* bootstrap
+* [bootstrap](https://github.com/azat-co/rpjs/tree/master/bootstrap)
  	
  	[Twitter Bootstrap] scaffolding example
 
 
-* jquery
+* [jquery](https://github.com/azat-co/rpjs/tree/master/jquery)
 	
 	[jQuery], Twitter API and JSONP example
 
-* parse
+* [parse](https://github.com/azat-co/rpjs/tree/master/parse)
 	
 	Simple example of [Parse.com] JavaScript SDK
 
-* rest
+* [rest](https://github.com/azat-co/rpjs/tree/master/rest)
 	
 	Message Board front-end: [jQuery] and [Parse.com] REST API; ready for deployment.
 
-* sdk
+* [sdk](https://github.com/azat-co/rpjs/tree/master/sdk)
 	
 	[BackboneJS] and [Parse.com] SDK Message Board
 
 ## Part III — Building Back-End Application
 
-* hello
+* [hello](https://github.com/azat-co/rpjs/tree/master/hello)
 	
 	[NodeJS] "Hello World" app, ready for deployment
 	
-* db
+* [db](https://github.com/azat-co/rpjs/tree/master/db)
 	
 	Simple app to test local database connection with MongoDB Native Driver
 
-* test
+* [test](https://github.com/azat-co/rpjs/tree/master/test)
 	
 	Message Board back-end: TDD with run-time storage
 
-* mongo
+* [mongo](https://github.com/azat-co/rpjs/tree/master/mongo)
 	
 	Message Board back-end: [MongoDB] storage, ready for deployment
 
 ## Part IV — Putting it All Together
 
-* node
+* [node](https://github.com/azat-co/rpjs/tree/master/node)
 	
 	Message Board back-end with CORS
 
-* board
+* [board](https://github.com/azat-co/rpjs/tree/master/board)
 
 	Message Board front-end with our back end
 
