@@ -32,13 +32,13 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 	
 	[NodeJS] "Hello World" app, ready for deployment
 	
+* [test](https://github.com/azat-co/rpjs/tree/master/test)
+
+	Message Board back-end: TDD with run-time storage
+
 * [db](https://github.com/azat-co/rpjs/tree/master/db)
 	
 	Simple app to test local database connection with MongoDB Native Driver
-
-* [test](https://github.com/azat-co/rpjs/tree/master/test)
-	
-	Message Board back-end: TDD with run-time storage
 
 * [mongo](https://github.com/azat-co/rpjs/tree/master/mongo)
 	
