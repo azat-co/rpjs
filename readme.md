@@ -46,14 +46,13 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 
 ## Part IV — Putting it All Together
 
-* [node](https://github.com/azat-co/rpjs/tree/master/node)
-	
-	Message Board back-end with CORS
-
 * [board](https://github.com/azat-co/rpjs/tree/master/board)
 
 	Message Board front-end with our back end
 
+* [node](https://github.com/azat-co/rpjs/tree/master/node)
+	
+	Message Board back-end with CORS
 
 
 
