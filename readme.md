@@ -22,6 +22,10 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 	
 	Message Board front-end: [jQuery] and [Parse.com] REST API; ready for deployment.
 
+* [backbone](https://github.com/azat-co/rpjs/tree/master/backbone)
+
+	Diving Deeper into Backbone.js
+
 * [sdk](https://github.com/azat-co/rpjs/tree/master/sdk)
 	
 	[BackboneJS] and [Parse.com] SDK Message Board
