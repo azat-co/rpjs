@@ -5,11 +5,12 @@ http://rapidprototypingwithjs.com.
 var mongodb = require('mongodb');
 var url = require('url');
 var log = console.log;
+var dbUri = process.env.MONGOHQ_URL || 'mongodb://localhost:27017/test';
 
-var connectionUri = url.parse(process.env.MONGOHQ_URL);
+var connectionUri = url.parse(dbUri);
 var dbName = connectionUri.pathname.replace(/^\//, '');
 
-mongodb.Db.connect(process.env.MONGOHQ_URL, function(error, client) {
+mongodb.Db.connect(dbUri, function(error, client) {
   if (error) throw error;
 
   client.collectionNames(function(error, names){
@@ -24,7 +25,7 @@ mongodb.Db.connect(process.env.MONGOHQ_URL, function(error, client) {
       log(colName);
       lastCollection = colName;
     });
-
+    if (!lastCollection) return;
     var collection = new mongodb.Collection(client, lastCollection);
     log("\nDocuments in " + lastCollection);
     var documents = collection.find({}, {limit:5});
@@ -41,7 +42,7 @@ mongodb.Db.connect(process.env.MONGOHQ_URL, function(error, client) {
         docs.forEach(function(doc){
           log(doc);
         });
-
+     
         // close the connection
         client.close();
       });
