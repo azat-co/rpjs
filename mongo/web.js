@@ -13,7 +13,7 @@ var host = process.env.MONGOHQ_URL || "mongodb://@127.0.0.1:27017/twitter-clone"
 //MONGOHQ_URL=mongodb://user:pass@server.mongohq.com/db_name
 mongo.Db.connect(host, function(error, client) {
 	if (error) throw error;
-	var collection = new mongo.Collection(client, 'test_collection');
+	var collection = new mongo.Collection(client, 'messages');
 	var app = http.createServer( function (request, response) {
 		if (request.method==="GET"&&request.url==="/messages/list.json") {
 			collection.find().toArray(function(error,results) {
