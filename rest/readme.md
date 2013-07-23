@@ -1,4 +1,4 @@
-# Simple Message Board Application
+# Twitter Clone Application
 
 * Parse.com REST API
 * jQuery

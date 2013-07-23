@@ -1,6 +1,6 @@
-# Message Board
+# Twitter Clone
 
-Message Board: Backbone + Parse.com
+Twitter Clone: Backbone + Parse.com
 
 ## Parse.com
 
