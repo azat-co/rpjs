@@ -1,6 +1,6 @@
-# Twitter Clone
+# Chat
 
-Twitter Clone: Backbone + Parse.com
+Chat: Backbone + Parse.com
 
 ## Parse.com
 

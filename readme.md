@@ -20,7 +20,7 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 
 * [rest](https://github.com/azat-co/rpjs/tree/master/rest)
 	
-	Twitter Clone front-end: [jQuery] and [Parse.com] REST API; ready for deployment.
+	Chat front-end: [jQuery] and [Parse.com] REST API; ready for deployment.
 
 * [backbone](https://github.com/azat-co/rpjs/tree/master/backbone)
 
@@ -28,7 +28,7 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 
 * [sdk](https://github.com/azat-co/rpjs/tree/master/sdk)
 	
-	[BackboneJS] and [Parse.com] SDK Twitter Clone
+	[BackboneJS] and [Parse.com] SDK Chat
 
 ## Part III — Building Back-End Application
 
@@ -38,7 +38,7 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 	
 * [test](https://github.com/azat-co/rpjs/tree/master/test)
 
-	Twitter Clone back-end: TDD with run-time storage
+	Chat back-end: TDD with run-time storage
 
 * [db](https://github.com/azat-co/rpjs/tree/master/db)
 	
@@ -46,17 +46,17 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
 
 * [mongo](https://github.com/azat-co/rpjs/tree/master/mongo)
 	
-	Twitter Clone back-end: [MongoDB] storage, ready for deployment
+	Chat back-end: [MongoDB] storage, ready for deployment
 
 ## Part IV — Putting it All Together
 
 * [board](https://github.com/azat-co/rpjs/tree/master/board)
 
-	Twitter Clone front-end with our back end
+	Chat front-end with our back end
 
 * [node](https://github.com/azat-co/rpjs/tree/master/node)
 	
-	Twitter Clone back-end with CORS
+	Chat back-end with CORS
 
 
 

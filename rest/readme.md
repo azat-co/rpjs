@@ -1,4 +1,4 @@
-# Twitter Clone Application
+# Chat Application
 
 * Parse.com REST API
 * jQuery
