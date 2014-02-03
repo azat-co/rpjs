@@ -10,7 +10,7 @@ Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you h
  	[Twitter Bootstrap] scaffolding example
 
 
-* [jquery](https://github.com/azat-co/rpjs/tree/master/jquery)
+* [jQuery](https://github.com/azat-co/rpjs/tree/master/jquery)
 	
 	[jQuery], Twitter API and JSONP example
 
