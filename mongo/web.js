@@ -9,7 +9,7 @@ var querystring = require('querystring');
 var mongo = require('mongodb');
 
 
-var host = process.env.MONGOHQ_URL || "mongodb://@127.0.0.1:27017/twitter-clone";
+var host = process.env.MONGOHQ_URL || "mongodb://@127.0.0.1:27017/messages";
 //MONGOHQ_URL=mongodb://user:pass@server.mongohq.com/db_name
 mongo.Db.connect(host, function(error, client) {
 	if (error) throw error;
