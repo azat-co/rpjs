@@ -4,10 +4,8 @@ var parseKey="your-rest-api-key";
 $(document).ready(function(){
 	getMessages();
 	$("#send").click(function(){
-		var username = $("input[name=username]").attr('value');
-		var message = $("input[name=message]").attr('value');
-		console.log(username)
-		console.log("!")
+		var username = $("input[name=username]").val();
+		var message = $("input[name=message]").val();
 		$.ajax({
 			url: " https://api.parse.com/1/classes/MessageBoard",
 			headers: {
