@@ -49,6 +49,7 @@
 
     });
     var appleView = Backbone.View.extend({
+      el: 'body',
       template: _.template('<figure>\
                               <img src="<%= attributes.url%>"/>\
                               <figcaption><%= attributes.name %></figcaption>\
@@ -57,7 +58,7 @@
       render: function(appleName){
         var appleModel = this.collection.where({name:appleName})[0];
         var appleHtml = this.template(appleModel);
-        $('body').html(appleHtml);
+        this.$el.html(appleHtml);
       }
     });
     $(document).ready(function(){
