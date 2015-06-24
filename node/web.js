@@ -11,21 +11,21 @@ var mongo = require('mongodb');
 var host = process.env.MONGOHQ_URL || "mongodb://localhost:27017/board";
 //MONGOHQ_URL=mongodb://user:pass@server.mongohq.com/db_name
 
-
-mongo.Db.connect(host, function(error, client) {
+var MongoClient = mongo.MongoClient
+MongoClient.connect(host, function(error, db) {
   if (error) throw error;
-  var collection = new mongo.Collection(client, 'messages');
+  var collection = db.collection('messages');
   var app = http.createServer( function (request, response) {
     var origin = (request.headers.origin || "*");
     if (request.method=="OPTIONS") {
       response.writeHead("204", "No Content", {
         "Access-Control-Allow-Origin": origin,
-        "Access-Control-Allow-Methods": 
+        "Access-Control-Allow-Methods":
           "GET, POST, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "content-type, accept",
         "Access-Control-Max-Age": 10, // Seconds.
         "Content-Length": 0
-      });            
+      });
       response.end();
     };
     if (request.method==="GET"&&request.url==="/messages/list.json") {
@@ -45,7 +45,7 @@ mongo.Db.connect(host, function(error, client) {
       request.on('data', function(data) {
         console.log("RECEIVED DATA:")
         console.log(data.toString('utf-8'));
-        collection.insert(JSON.parse(data.toString('utf-8')), 
+        collection.insert(JSON.parse(data.toString('utf-8')),
         {safe:true}, function(error, obj) {
           if (error) throw error;
           console.log("OBJECT IS SAVED: ")
@@ -57,7 +57,7 @@ mongo.Db.connect(host, function(error, client) {
             'Content-Length':body.length
           });
           response.end(body);
-        })        
+        })
       })
 
     };
