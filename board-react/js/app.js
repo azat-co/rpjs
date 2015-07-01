@@ -48,7 +48,7 @@ var MessageList = React.createClass({
 
   render: function render() {
     var messages = this.props.messages;
-    console.log(messages);
+    // console.log(messages)
     if (!messages.length > 0) return React.createElement(
       "tr",
       null,
@@ -78,7 +78,7 @@ var MessageList = React.createClass({
             React.createElement(
               "th",
               { className: "span2" },
-              "Username"
+              "Name"
             ),
             React.createElement(
               "th",
@@ -93,11 +93,11 @@ var MessageList = React.createClass({
           messages.map(function (message) {
             return React.createElement(
               "tr",
-              { key: message.id },
+              { key: message._id },
               React.createElement(
                 "td",
                 null,
-                message.username
+                message.name
               ),
               React.createElement(
                 "td",
@@ -117,7 +117,7 @@ var NewMessage = React.createClass({
 
   addMessage: function addMessage() {
     this.props.addMessageCb({
-      username: React.findDOMNode(this.refs.username).value,
+      name: React.findDOMNode(this.refs.username).value,
       message: React.findDOMNode(this.refs.message).value
     });
     React.findDOMNode(this.refs.username).value = "";
@@ -150,13 +150,33 @@ var MessageBoard = React.createClass({
   displayName: "MessageBoard",
 
   getInitialState: function getInitialState() {
-    return { messages: [{ id: 1, username: "Azat", message: "hi" }] };
+    // return {messages: []}
+    return { messages: [{ _id: 1, name: "Azat", message: "hi" }] };
+  },
+  componentWillMount: function componentWillMount() {
+    var url = "http://localhost:5000/messages/list.json";
+    var _this = this;
+    $.getJSON(url, function (result) {
+      // console.log(result)
+      if (!result || !result || !result.length) {
+        return;
+      }
+      // console.log(result)
+      _this.setState({ messages: result });
+    });
   },
   addMessage: function addMessage(message) {
     var messages = this.state.messages;
-    message.id = Math.random();
-    messages.push(message);
-    this.setState({ messages: messages });
+    // message._id = Math.random()
+
+    var _this = this;
+    $.post("http://localhost:5000/messages/create.json", JSON.stringify(message), function (data) {
+      if (!result || !result || !result.length) {
+        return;
+      }
+      messages.push(message);
+      _this.setState({ messages: messages });
+    });
   },
   render: function render() {
     return React.createElement(
