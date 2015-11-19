@@ -72,7 +72,7 @@ var NewMessage = React.createClass({
       <div className="row-fluid" id="new-message">
         <div className="span12">
           <form className="well form-inline" >
-            <input type="text" name="username" className="input-small" placeholder="Username" ref="username"/>
+            <input type="text" name="username" value="{this.state.}" className="input-small" placeholder="Username" ref="username"/>
             <input type="text" name="message" className="input-small" placeholder="Message Text" ref="message" />
             <a id="send" className="btn btn-primary" onClick={this.addMessage}>SEND</a>
           </form>
