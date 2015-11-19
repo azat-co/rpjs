@@ -1,5 +1,7 @@
 # Rapid Prototyping with JS examples
 
+**UPDATE:** I'm publishing the new, updated and revised version of this book under the new title *Fullstack JavaScript*. Go to <http://github.com/azat-co/fullstack-javascript> for more details.
+
 Rapid Prototyping with JS is a JavaScript and Node.js book that will teach you how to build mobile and web apps fast. — Read more at
 <http://rapidprototypingwithjs.com>.
 
