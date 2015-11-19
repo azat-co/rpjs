@@ -1,5 +1,9 @@
-var parseID="Zc36GIp6WyzKIB9HvqRBEGnIeMO0X21rDbVwGPvp";
-var parseKey="1LKZVd4KG6PFpldvCha5RDY8Z5EZeJhy2Bl4vgJ3";
+var parseID="your-parse-app-id";
+var parseKey="your-rest-api-key";
+
+// Azat's app, change these values to your own keys
+parseID="Zc36GIp6WyzKIB9HvqRBEGnIeMO0X21rDbVwGPvp";
+parseKey="1LKZVd4KG6PFpldvCha5RDY8Z5EZeJhy2Bl4vgJ3";
 
 $(document).ready(function(){
 	getMessages();
@@ -56,7 +60,7 @@ function updateView(messages) {
 	var table=$(".table tbody");
 	table.html('');
 	$.each(messages.results, function (index, value) {
-		var trEl=$('<tr><td>'+value.username+'</td><td>'+value.message+'</td></tr>');
+		var trEl=('<tr><td>'+value.username+'</td><td>'+value.message+'</td></tr>');
 		table.append(trEl);
 	});
 
