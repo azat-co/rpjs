@@ -6,14 +6,14 @@ http://rapidprototypingwithjs.com.
 var http = require('http');
 var util = require('util');
 var querystring = require('querystring');
-var mongo = require('mongodb');
+var mongo = require('mongodb').MongoClient;
 
 
 var host = process.env.MONGOHQ_URL || "mongodb://@127.0.0.1:27017/messages";
 //MONGOHQ_URL=mongodb://user:pass@server.mongohq.com/db_name
-mongo.Db.connect(host, function(error, client) {
+mongo.connect(host, function(error, db) {
 	if (error) throw error;
-	var collection = new mongo.Collection(client, 'messages');
+	var collection = db.collection('messages');
 	var app = http.createServer( function (request, response) {
 		if (request.method==="GET"&&request.url==="/messages/list.json") {
 			collection.find().toArray(function(error,results) {
